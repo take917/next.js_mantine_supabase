@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import { Button, Group } from '@mantine/core'
+import { ReplyIcon } from '@heroicons/react/solid'
 import { Layout } from '../components/Layout'
 import { BrandGithub, ThreeDCubeSphere } from 'tabler-icons-react'
 
@@ -20,6 +22,9 @@ const ButtonDemo = () => {
           Press
         </Button>
         <Button mt="md">Click</Button>
+        <Link href="/">
+          <ReplyIcon className="mt-4 h-6 cursor-pointer text-gray-300" />
+        </Link>
       </Group>
     </Layout>
   )
