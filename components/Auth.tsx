@@ -3,7 +3,7 @@ import { useState } from 'react'
 import * as Yup from 'yup'
 import { ShieldCheckIcon } from '@heroicons/react/solid'
 import { ExclamationCircleIcon } from '@heroicons/react/solid'
-import { useForm } from '@mantine/hooks'
+import { useForm } from '@mantine/form'
 import { yupResolver } from '@mantine/form'
 import {
   Anchor,
@@ -40,5 +40,6 @@ export const Auth = () => {
       age: 15,
     },
   })
+
   return <div>Auth</div>
 }
