@@ -15,6 +15,6 @@ const Home: NextPage = () => {
     })
   }, [setSession])
 
-  return <div>{session ? <DashBoard /> : <Auth />}</div>
+  return <>{session ? <DashBoard /> : <Auth />}</>
 }
 export default Home

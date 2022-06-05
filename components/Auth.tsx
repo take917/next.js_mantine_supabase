@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import * as Yup from 'yup'
-import { ShieldCheckIcon, ShieldExclamationIcon } from '@heroicons/react/solid'
-import { ExclamationCircleIcon } from '@heroicons/react/solid'
+import { ShieldCheckIcon } from '@heroicons/react/solid'
+import { ExclamationCircleIcon } from '@heroicons/react/outline'
 import { useForm } from '@mantine/form'
 import { yupResolver } from '@mantine/form'
 import {
@@ -66,7 +66,7 @@ export const Auth = () => {
   return (
     <Layout title="Auth">
       <Group direction="column" position="center">
-        <ShieldExclamationIcon className="h-16 w-16 text-blue-500" />
+        <ShieldCheckIcon className="h-16 w-16 text-blue-500" />
         {error && (
           <Alert
             mt="md"
